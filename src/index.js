@@ -82,6 +82,12 @@ export default {
           // ms
           idle.set({ idle: idleTime })
           idle.stop().reset().start()
+        },
+        stopIdleTimer () {
+          idle.stop()
+        },
+        startIdleTimer () {
+          idle.reset().start()
         }
       }
     })

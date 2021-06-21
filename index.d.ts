@@ -40,6 +40,19 @@ declare module 'idle-vue' {
        * Note that using isAppIdle or using the hooks onIdle and onActive are both different, valid ways of doing the same thing: detecting when your app is idle. You can use either or both of them depending on your needs.
        */
       isAppIdle: boolean
+      /**
+       * Change the period of time required for the application to be considered idle
+       * @param idleTime The time (in ms) without input before the program is considered idle. For instance, with idleTime: 40000, the module will emit idle events after 40 seconds of inactivity. Default value: 60000 (one minute).
+       */
+      changeIdleTime(idleTime: number): void
+      /**
+       * Stops the idle timer from running
+       */
+      stopIdleTimer(): void
+      /**
+       * Resets and starts the idle timer
+       */
+      startIdleTimer(): void
     }
   }
  // In case you want to vue.extend format
