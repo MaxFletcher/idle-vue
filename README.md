@@ -1,5 +1,10 @@
-idle-vue [![Build Status](https://travis-ci.org/soixantecircuits/idle-vue.svg?branch=master)](https://travis-ci.org/soixantecircuits/idle-vue)
+**This is a fork of the original [Idle-Vue](https://github.com/soixantecircuits/idle-vue) plug-in by [soixantecircuits](https://github.com/soixantecircuits).**
+
+___
+
+idle-vue
 ========
+
 
 `idle-vue` is a [Vue.js](http://vuejs.org/) plug-in, that detects when the user hasn't interacted with your app for a while. `idle-vue` is meant to be used with Vue, [Vuex](https://github.com/vuejs/vuex) and either [Webpack](https://webpack.js.org/) or [Browserify](http://browserify.org/).
 
@@ -8,7 +13,8 @@ idle-vue [![Build Status](https://travis-ci.org/soixantecircuits/idle-vue.svg?br
 :earth_africa: Installation
 ---------------------------
 
-    npm install --save idle-vue
+    npm install --save github:MaxFletcher/idle-vue#semver:^2
+    yarn add https://github.com/MaxFletcher/idle-vue.git#semver:^2
 
 :wave: Usage
 ------------
